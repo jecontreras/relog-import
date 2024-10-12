@@ -1,0 +1,98 @@
+.anchos{
+  width: 304px !important;
+  top: 0px !important;
+}
+.imgFoto{
+  width: 70px !important;
+  height: 70px !important;
+}
+.colorMenu{
+  color: black !important;
+  background-color: white !important;
+}
+.toolbar{
+  height: 45px !important;
+}
+.anchando{
+  height: 15px;
+}
+
+mat-sidenav {
+  top: 46px !important;
+  bottom: 0px;
+  transform: none;
+  visibility: visible;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .mat-toolbar {
+    margin-bottom: 0px !important;
+  }
+  .mat-card-image {
+    width: auto;
+  }
+  .fondo {
+    background: #3f51b5;
+  }
+  #btn-actualizar {
+    margin-left: 15px;
+  }
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    z-index: 2;
+  }
+
+  h1.example-app-name {
+    margin-left: 8px;
+  }
+
+  .example-sidenav-container {
+    flex: 1;
+  }
+
+  .example-is-mobile .example-sidenav-container {
+    flex: 1 0 auto;
+  }
+  .nav-list{
+    padding: 1em;
+  }
+  .menu2 {
+    text-align: end;
+    float: right;
+  }
+  .example-icon {
+    padding: 5px 1em;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .p {
+    padding: 10px;
+  }
+  .margin {
+    margin: 2%;
+  }
+  .perfil {
+    border-radius: 35px;
+    width: 90px;
+    height: 90px;
+  }
+  .border {
+    border: 1px solid black;
+    background: #d8d3d3;
+  }
+  .marginLeft {
+    margin-left: 20px;
+  }
+  .divisor {
+    margin-right: 15px;
+  }

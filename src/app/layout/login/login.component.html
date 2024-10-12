@@ -1,0 +1,32 @@
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="aa-myaccount-login">
+                                    <h4>Login</h4>
+                                    <div action="" class="aa-login-form">
+                                        <label for="">Correo electrónico<span>*</span></label>
+                                        <input type="text" cdkFocusInitial [(ngModel)]="data.usu_email"
+                                            placeholder="Correo electrónico">
+                                        <label for="">Contraseña<span>*</span></label>
+                                        <input type="password" [(ngModel)]="data.usu_clave" (click)="submit()"
+                                            (change)="submit()" placeholder="Contraseña">
+                                        <button type="submit" class="aa-browse-btn" (click)="submit()">Iniciar Seccion</button>
+                                        <p class="aa-lost-password"><a cdkFocusInitial target="_blank" class="pointer"
+                                                *ngIf="!disableRestarure"
+                                                [href]="'https://wa.me/573148487506?text=Hola Servicio al cliente, como esta, saludo cordial, necesito recuperar las credenciales de mi cuenta ' + data.usu_email "><span>Recuperar
+                                                    Cuenta</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

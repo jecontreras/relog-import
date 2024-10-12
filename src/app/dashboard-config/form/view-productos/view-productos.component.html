@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Info Producto</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-6 col-xs-6">
+            <lib-ngx-image-zoom
+                [thumbImage]=data.foto
+                [fullImage]=data.foto
+                [magnification]="1"
+                [enableScrollZoom]="true"
+                [enableLens]="true"
+                [lensWidth]="200"
+                [lensHeight]="200"
+            ></lib-ngx-image-zoom>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 col-xs-6 content row">
+            <div class="col-12">
+                <h3 class="text-primary">$ {{ ( data.pro_uni_venta || 0).toLocaleString(1) }} COP</h3>
+                <label *ngIf="data.listColor?.length">Colores</label>
+                <select class="form-control form-control-sm" [(ngModel)]="data.color" (change)="cambioImgs()" *ngIf="data.listColor?.length">
+                    <option [value]="item.foto" *ngFor="let item of data.listColor">{{ item.talla }}</option>
+                </select>
+                <h4>{{ data.pro_nombre }}</h4>
+                <p [innerHtml]="data.pro_descripcion | slice: 0: rango"></p>
+                <p *ngIf="rango == 100" (click)="rango = 5000" class="text-primary">leer mas..</p>
+                <p *ngIf="rango != 100" (click)="rango = 100" class="text-primary">leer menos..</p>
+                <label>Cantidad Adquirir</label>
+                <input type="number" [(ngModel)]="data.cantidadAdquirir" class="form-control form-control-sm">
+                <button (click)="AgregarCart()" type="button" class="btn btn-primary">
+                    Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button cdkFocusInitial mat-button mat-dialog-close>Cerrar</button>
+  </mat-dialog-actions>
