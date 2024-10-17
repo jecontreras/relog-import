@@ -8,7 +8,7 @@ export const environment = {
   url: "https://ofertastoreapp-753157c3f00c.herokuapp.com",
   urlFront: "http://localhost:4200",
   //URLFILE: "https://apilokomproaqui1-9219656b6da1.herokuapp.com",
-  URLFILE: "http://localhost:1339"
+  URLFILE: "https://apilokomproaqui1-9219656b6da1.herokuapp.com"
 };
 
 /*

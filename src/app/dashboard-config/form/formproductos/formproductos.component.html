@@ -5,7 +5,7 @@
     </div>
     <div class="row" *ngIf="!disableSpinner">
         <div class="col" *ngIf="!id">
-            <ngx-dropzone (change)="onSelects($event, 'foto')" accept="image/jpeg,image/jpg,image/png">
+            <ngx-dropzone (change)="onSelects($event, 'foto')" accept="image/jpeg,image/jpg,image/png,image/webp">
                 <ngx-dropzone-label>Subir Fotos</ngx-dropzone-label>
                 <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f"
                     [removable]="true" (removed)="onRemoves(f)" multiple="false"
@@ -290,7 +290,7 @@
                                         <button type="button" (click)="item.checkFoto = false"
                                             class="btn btn-success">Ocultar</button>
                                     </div>
-                                    <ngx-dropzone (change)="onSelect( $event, item )" accept="image/jpeg,image/jpg,image/png">
+                                    <ngx-dropzone (change)="onSelect( $event, item )" accept="image/jpeg,image/jpg,image/png,image/webp">
                                         <ngx-dropzone-label>Abrir archivos</ngx-dropzone-label>
                                         <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview"
                                             *ngFor="let f of files" [file]="f" [removable]="true"
@@ -332,7 +332,7 @@
                                         <button type="button" (click)="item.checkFotoGaleri = false"
                                             class="btn btn-success">Ocultar</button>
                                     </div>
-                                    <ngx-dropzone (change)="onSelect2( $event, item )" accept="image/jpeg,image/jpg,image/png">
+                                    <ngx-dropzone (change)="onSelect2( $event, item )" accept="image/jpeg,image/jpg,image/png,image/webp">
                                         <ngx-dropzone-label>Abrir archivos</ngx-dropzone-label>
                                         <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview"
                                             *ngFor="let f of files3" [file]="f" [removable]="true"
